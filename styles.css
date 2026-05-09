@@ -46,6 +46,110 @@ body::selection {
   background: rgba(139, 98, 255, 0.2);
 }
 
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
 .page-shell {
   max-width: 1040px;
   margin: 0 auto;
@@ -106,9 +210,18 @@ body::selection {
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
+.theme-toggle {
+  animation: fadeInDown 0.6s ease-out;
+}
+
 .theme-toggle:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   filter: brightness(1.05);
+  animation: pulse 0.6s ease-in-out;
+}
+
+.theme-toggle:active {
+  transform: scale(0.98);
 }
 
 .content {
@@ -127,6 +240,7 @@ body::selection {
   border-radius: 32px;
   box-shadow: var(--shadow);
   padding: 30px;
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .hero-card {
@@ -135,6 +249,7 @@ body::selection {
   gap: 32px;
   align-items: center;
   transition: transform 0.1s ease-out;
+  animation-delay: 0.1s;
 }
 
 .eyebrow {
@@ -178,6 +293,13 @@ body::selection {
   color: var(--primary);
   font-size: 0.95rem;
   font-weight: 600;
+  animation: fadeInUp 0.6s ease-out;
+  transition: all 0.3s ease;
+}
+
+.tags span:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 8px 16px rgba(139, 98, 255, 0.2);
 }
 
 .hero-image {
@@ -197,6 +319,12 @@ body::selection {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: scaleIn 0.6s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+  transform: scale(1.05);
 }
 
 .image-card img {
@@ -338,16 +466,35 @@ body::selection {
   padding: 24px;
   text-align: center;
   box-shadow: var(--shadow);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: slideInUp 0.6s ease-out;
 }
 
 .idea-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(139, 98, 255, 0.15);
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .idea-icon {
   font-size: 2rem;
   margin-bottom: 16px;
+  animation: bounce 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+.idea-card:hover .idea-icon {
+  animation: spin 0.6s ease-in-out;
 }
 
 .idea-card h3 {
@@ -374,11 +521,13 @@ body::selection {
   border-radius: 24px;
   overflow: hidden;
   box-shadow: var(--shadow);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: scaleIn 0.6s ease-out;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(139, 98, 255, 0.15);
 }
 
 .project-image {
@@ -432,11 +581,62 @@ body::selection {
   text-decoration: none;
   font-weight: 600;
   box-shadow: 0 12px 24px rgba(139, 98, 255, 0.24);
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .contact-button:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(139, 98, 255, 0.35);
+}
+
+.contact-button:active {
+  transform: scale(0.98);
+}
+
+/* Animation delays for staggered effect */
+.idea-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.idea-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.idea-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.idea-card:nth-child(1) .idea-icon {
+  animation-delay: 0s;
+}
+
+.idea-card:nth-child(2) .idea-icon {
+  animation-delay: 0.3s;
+}
+
+.idea-card:nth-child(3) .idea-icon {
+  animation-delay: 0.6s;
+}
+
+.project-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.project-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.tags span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.tags span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.tags span:nth-child(3) {
+  animation-delay: 0.4s;
 }
 
 @media (max-width: 768px) {
