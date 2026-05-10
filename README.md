@@ -3,7 +3,7 @@
 Công cụ AI : chat gpt dùng để viết promt, github để tạo portfolio hoàn chỉnh, deepai để tạo ảnh mô hình 3d.
 # Ví dụ promt:
 # promt dùng trong chat gpt:
-Bạn là 1 chuyên gia về UI/UX tạo hộ tôi porfolio đơn giản bao gồm HTML + CSS, giao diện white, có nút thay đổi theme ở đầu trang. Thông tin cá nhân là Đinh Thị Kim Hồng, nghề nghiệp: Sinh viên khoa CNTT - Đồ họa kĩ thuật số. Công trình đã công bố: thích vẽ 2D và vẽ 3D, website có các hình ảnh dễ thương phù hợp với portfolio này. Hãy tạo cho tôi 1 bộ prompt để agent có thể thiết kế ra website như vậy.
+Bạn là 1 chuyên gia về UI/UX tạo hộ tôi porfolio đơn giản bao gồm HTML + CSS, giao diện white, có nút thay đổi theme ở đầu trang. Thông tin cá nhân là Đinh Thị Kim Hồng, nghề nghiệp: Sinh viên khoa CNTT - Đồ họa kĩ thuật số. Công trình đã công bố: vẽ 3D, website có các hình ảnh dễ thương phù hợp với portfolio này. Hãy tạo cho tôi 1 bộ prompt để agent có thể thiết kế ra website như vậy.
 giúp mình sửa lỗi này Git: From https://github.com/dinhhong9864-prog/portfolio4
 viết cho mình promt có story telling dài hơn nữa cho portfolio dựa trên link này https://zany-capybara-969xw6797qq42pwvw-8000.app.github.dev/, viết bằng tiếng việt
 # promt dùng trong github
@@ -141,12 +141,9 @@ Mỗi project có:
 5. Art & Inspiration Section
    Một section riêng nói về nguồn cảm hứng:
 
-* Anime
-* Game
 * Những gam màu pastel
 * Bầu trời đêm
 * Những quán cà phê yên tĩnh
-* Các nhân vật fantasy
 * Cảm giác chữa lành qua nghệ thuật
 
 Section này cần cực kỳ aesthetic.
