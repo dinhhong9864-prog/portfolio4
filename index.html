@@ -3,135 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Đinh Thị Kim Hồng</title>
+    <title>Hành trình sáng tạo của Đinh Thị Kim Hồng</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-shell">
-        <header class="topbar">
-            <div class="brand">
-                <span class="brand-mark">HK</span>
-                <div>
-                    <p class="brand-label">Portfolio</p>
-                    <h1>Đinh Thị Kim Hồng</h1>
-                </div>
-            </div>
-            <button class="theme-toggle" id="themeToggle" aria-label="Chuyển đổi giao diện sáng tối">
-                🌙 Chế độ tối
-            </button>
-        </header>
-
-        <main class="content">
-            <section class="hero-card">
-                <div class="hero-text">
-                    <p class="eyebrow">Xin chào, mình là</p>
-                    <h2>Đinh Thị Kim Hồng</h2>
-                    <p class="subtitle">Sinh viên khoa CNTT - Đồ họa kĩ thuật số</p>
-                    <p class="description">Thích tạo ra những tác phẩm dễ thương và sáng tạo trong lĩnh vực đồ họa kỹ thuật số.</p>
-                    <div class="tags">
-                        <span>Thiết kế đồ họa</span>
-                        <span>UI/UX</span>
-                        <span>Web Development</span>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-card">
-                        <img src="https://picsum.photos/320/320?random=1" alt="Avatar của Đinh Thị Kim Hồng">
-                    </div>
-                </div>
-            </section>
-
-            <section class="about-section">
-                <div class="section-header">
-                    <p class="section-title">Về bản thân</p>
-                    <p class="section-note">Hành trình từ niềm đam mê đến định hướng nghề nghiệp.</p>
-                </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Tôi là Đinh Thị Kim Hồng, một sinh viên đam mê công nghệ thông tin và đồ họa kỹ thuật số. Từ nhỏ, tôi đã yêu thích vẽ vời và sáng tạo, điều này đã dẫn dắt tôi đến với lĩnh vực CNTT.</p>
-                        <p>Định hướng nghề nghiệp của tôi là trở thành một nhà thiết kế đồ họa chuyên nghiệp, kết hợp giữa kỹ năng kỹ thuật và sự sáng tạo nghệ thuật. Tôi tin rằng công nghệ và nghệ thuật có thể hòa quyện để tạo ra những trải nghiệm tuyệt vời.</p>
-                        <p>Kỹ năng chính của tôi bao gồm: Thiết kế đồ họa (Photoshop, Illustrator), Lập trình web (HTML, CSS, JavaScript), và Khái niệm 3D (Blender).</p>
-                    </div>
-                    <div class="about-image">
-                        <div class="image-card">
-                            <img src="https://picsum.photos/300/300?random=2" alt="Hình ảnh cá nhân">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="creative-section">
-                <div class="creative-header">
-                    <h2>Sáng tạo & Ý tưởng</h2>
-                    <p>Khám phá những ý tưởng sáng tạo của tôi</p>
-                </div>
-                <div class="creative-canvas">
-                    <div class="floating-shape shape-1"></div>
-                    <div class="floating-shape shape-2"></div>
-                    <div class="floating-shape shape-3"></div>
-                    <div class="floating-shape shape-4"></div>
-                    <div class="floating-shape shape-5"></div>
-                    <div class="creative-content">
-                        <div class="idea-card">
-                            <div class="idea-icon">💡</div>
-                            <h3>Thiết kế tương tác</h3>
-                            <p>Tạo ra các giao diện người dùng thân thiện và hấp dẫn.</p>
-                        </div>
-                        <div class="idea-card">
-                            <div class="idea-icon">🎨</div>
-                            <h3>Màu sắc & Phong cách</h3>
-                            <p>Kết hợp màu pastel và gradient để tạo cảm giác nhẹ nhàng.</p>
-                        </div>
-                        <div class="idea-card">
-                            <div class="idea-icon">🚀</div>
-                            <h3>Đổi mới kỹ thuật số</h3>
-                            <p>Áp dụng công nghệ mới vào thiết kế đồ họa.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="projects-section">
-                <div class="section-header">
-                    <p class="section-title">Dự án nổi bật</p>
-                    <p class="section-note">Những tác phẩm thể hiện sự sáng tạo và kỹ năng của tôi.</p>
-                </div>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="https://raw.githubusercontent.com/dinhhong9864-prog/portfolio4/refs/heads/main/3a8dd709-c054-4a24-bea3-7f139dcda843.jfif" alt="Mèo Tom từ Tom và Jerry">
-                        </div>
-                        <div class="project-content">
-                            <h3>Mô hình 3D cho Game Indie</h3>
-                            <p>Mô tả: Phát triển mô hình 3D cho một game indie nhỏ, sử dụng Blender.</p>
-                            <p>Vai trò: Modeling và texturing.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="contact-section">
-                <div class="section-header">
-                    <p class="section-title">Liên hệ</p>
-                    <p class="section-note">Hãy kết nối với tôi!</p>
-                </div>
-                <div class="contact-content">
-                    <p>Email: kimhong.dinh@example.com</p>
-                    <p>Phone: 0344358951</p>
-                    <p>LinkedIn: linkedin.com/in/kimhongdinh</p>
-                    <a href="mailto:kimhong.dinh@example.com" class="contact-button">Gửi Email</a>
-                </div>
-            </section>
-        </main>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="star">✨</div>
+            <div class="star">🌙</div>
+            <div class="star">🪐</div>
+        </div>
+        <p>Đang mở cánh cửa thế giới sáng tạo...</p>
     </div>
 
-    <script>
-        const themeToggle = document.getElementById('themeToggle');
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-theme');
-            themeToggle.textContent = document.body.classList.contains('dark-theme') ? '☀️ Chế độ sáng' : '🌙 Chế độ tối';
-        });
-    </script>
+    <div class="cursor" id="customCursor"></div>
+
+    <header class="navbar">
+        <div class="nav-brand">
+            <div class="brand-mark">HK</div>
+            <div>
+                <p class="brand-label">Portfolio</p>
+                <h1>Đinh Thị Kim Hồng</h1>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">Về tôi</a>
+            <a href="#skills">Kỹ năng</a>
+            <a href="#projects">Dự án</a>
+            <a href="#inspiration">Cảm hứng</a>
+            <a href="#journey">Hành trình</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Chuyển chế độ sáng tối">🌙</button>
+    </header>
+
+    <main>
+        <section id="home" class="hero reveal">
+            <div class="hero-copy">
+                <p class="eyebrow">Chào mừng đến với nhật ký sáng tạo của tôi</p>
+                <h2>Xin chào, mình là <span class="hero-name">Đinh Thị Kim Hồng</span></h2>
+                <h3 class="typing-title"><span class="typing-text"></span><span class="typing-cursor">|</span></h3>
+                <p class="hero-description">Mình là một người đang lớn lên cùng nghệ thuật và công nghệ, luôn tìm cách biến những ý tưởng nhỏ nhắn thành những trải nghiệm đầy cảm xúc.</p>
+                <div class="hero-actions">
+                    <a href="#about" class="btn btn-primary">Bắt đầu hành trình</a>
+                    <a href="#contact" class="btn btn-secondary">Kết nối với Hồng</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="hero-chip">storybook</div>
+                    <div class="hero-image">
+                        <img src="https://picsum.photos/420/520?random=21" alt="Hình ảnh Đinh Thị Kim Hồng">
+                        <div class="hero-badge">Digital Art</div>
+                    </div>
+                    <div class="hero-sticker">✨</div>
+                </div>
+            </div>
+            <div class="hero-floating">
+                <span>🖌️</span>
+                <span>⭐</span>
+                <span>🧠</span>
+            </div>
+        </section>
+
+        <section id="about" class="about reveal">
+            <div class="section-header">
+                <p class="section-label">About Me</p>
+                <h2>Hành trình bắt đầu</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-story">
+                    <p>Thuở bé, mình luôn cầm bút và chì lên những trang giấy trắng. Những nét vẽ vụng về ban đầu như những bí mật nhỏ, như tiếng thở đầu tiên của một thế giới riêng tư.</p>
+                    <p>Theo thời gian, mình nhận ra rằng màu sắc không chỉ là màu sắc — mà là cảm xúc, là kỷ niệm, là sự mơ mộng. Mình từng vẽ những con mèo, những lâu đài, những chiếc cầu vồng, rồi dần dần bắt đầu ghép màu, ghép hình như ghép một câu chuyện.</p>
+                    <p>Vào đại học, khi bắt đầu học thiết kế số và UI/UX, mình thấy sự hòa quyện tuyệt vời giữa sự mơ mộng và logic. Tiếp cận thiết kế không còn đơn thuần là làm đẹp, mà là xây dựng một hành trình để người dùng khám phá và cảm nhận.</p>
+                    <p>Khi cài đặt Blender, mình bất ngờ với khả năng biến phẳng 2D thành một không gian 3D sống động. Những đêm thức khuya sửa bài, viết code, render model, dù mệt mỏi vẫn luôn có một niềm vui sâu lắng khi nhìn thấy sản phẩm cuối cùng.</p>
+                    <p>Mình luôn tin rằng thiết kế tốt là thiết kế biết lắng nghe. Và portfolio này, chính là câu chuyện của một sinh viên CNTT - Đồ họa kỹ thuật số đang lớn lên cùng giấc mơ sáng tạo.</p>
+                </div>
+                <div class="about-highlight">
+                    <div class="about-image">
+                        <img src="https://picsum.photos/400/300?random=10" alt="Đinh Thị Kim Hồng - Digital Art">
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-top">Chân dung cảm xúc</div>
+                        <div class="about-card-body">
+                            <p><strong>Ngành học:</strong> Sinh viên khoa CNTT – Đồ họa kỹ thuật số</p>
+                            <p><strong>Định hướng:</strong> UI/UX Design, Digital Art, 2D Artist, 3D Modeling</p>
+                            <p><strong>Sở thích:</strong> Vẽ minh họa, thiết kế giao diện, làm mô hình 3D, sáng tạo concept art, fantasy.</p>
+                        </div>
+                        <div class="about-card-footer">Mình thích những thứ dễ thương, nhẹ nhàng, nhưng vẫn có chiều sâu.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills reveal">
+            <div class="section-header">
+                <p class="section-label">Skills</p>
+                <h2>Những mảnh ghép sáng tạo</h2>
+                <p class="section-note">Mỗi kỹ năng là một phần trong hành trình tôi trải nghiệm.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card glass">
+                    <div class="skill-icon">🧩</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Thiết kế giao diện như kể một câu chuyện, để người dùng cảm nhận được sự chăm sóc và ấm áp.</p>
+                </div>
+                <div class="skill-card glass">
+                    <div class="skill-icon">💻</div>
+                    <h3>HTML/CSS</h3>
+                    <p>Biến những layout thơ mộng thành hiện thực, với chuyển động nhẹ nhàng và bố cục tinh tế.</p>
+                </div>
+                <div class="skill-card glass">
+                    <div class="skill-icon">🖱️</div>
+                    <h3>Figma</h3>
+                    <p>Nơi mình thiết kế những ý tưởng đầu tiên, như một bản vẽ trong nhật ký sáng tạo.</p>
+                </div>
+                <div class="skill-card glass">
+                    <div class="skill-icon">🌀</div>
+                    <h3>Blender</h3>
+                    <p>Khám phá chiều không gian mới, biến những concept 2D thành mô hình 3D đầy chiều sâu.</p>
+                </div>
+                <div class="skill-card glass">
+                    <div class="skill-icon">🖌️</div>
+                    <h3>Photoshop</h3>
+                    <p>Phối màu, chỉnh sửa, làm bừng sáng từng độc tác nhỏ trong thế giới artbook của mình.</p>
+                </div>
+                <div class="skill-card glass">
+                    <div class="skill-icon">🌸</div>
+                    <h3>Illustration</h3>
+                    <p>Vẽ những nhân vật dễ thương, những concept fantasy và kể chuyện qua từng nét vẽ.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects reveal">
+            <div class="section-header">
+                <p class="section-label">Projects</p>
+                <h2>Những câu chuyện nhỏ</h2>
+                <p class="section-note">Mỗi dự án là một khoảnh khắc tôi dừng lại để kể lại cảm xúc.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card glass">
+                    <div class="project-visual">
+                        <img src="3a8dd709-c054-4a24-bea3-7f139dcda843.jfif" alt="3D Modeling project">
+                        <span class="project-chip">3D Modeling</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Mô hình 3D đêm khuya</h3>
+                        <p>Chuyến hành trình đầu tiên với Blender, từ những khối đơn giản đến một vật thể 3D chứa đầy tính cách và ánh sáng.</p>
+                        <div class="project-meta"><span>Blender</span><span>Texturing</span></div>
+                        <a href="#" class="project-button">Xem project</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="inspiration" class="inspiration reveal">
+            <div class="section-header">
+                <p class="section-label">Inspiration</p>
+                <h2>Những khoảnh khắc truyền cảm hứng</h2>
+                <p class="section-note">Các nguồn cảm hứng đã nuôi dưỡng tâm hồn sáng tạo của mình.</p>
+            </div>
+            <div class="inspiration-grid">
+                <div class="inspiration-card glass">
+                    <div class="icon">🎌</div>
+                    <h3>Anime</h3>
+                    <p>Những câu chuyện kỳ ảo, nhân vật có chiều sâu và cảm xúc tinh tế.</p>
+                </div>
+                <div class="inspiration-card glass">
+                    <div class="icon">🎮</div>
+                    <h3>Game</h3>
+                    <p>Trải nghiệm thế giới ảo, bầu trời rộng lớn và lối kể chuyện đẹp mắt.</p>
+                </div>
+                <div class="inspiration-card glass">
+                    <div class="icon">🌸</div>
+                    <h3>Pastel</h3>
+                    <p>Những gam màu nhẹ nhàng, ấm áp và nâng niu mọi cảm xúc.</p>
+                </div>
+                <div class="inspiration-card glass">
+                    <div class="icon">🌙</div>
+                    <h3>Bầu trời đêm</h3>
+                    <p>Yên bình, mơ mộng và đầy phép màu trong từng ngôi sao.</p>
+                </div>
+                <div class="inspiration-card glass">
+                    <div class="icon">☕</div>
+                    <h3>Café nhẹ</h3>
+                    <p>Không gian ấm cúng, nơi ý tưởng được ấp ủ và viết nên từng câu chuyện.</p>
+                </div>
+                <div class="inspiration-card glass">
+                    <div class="icon">✨</div>
+                    <h3>Fantasy</h3>
+                    <p>Những nhân vật kỳ thú và thế giới đầy phép thuật khiến mình luôn thức giấc sáng tạo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="journey" class="journey reveal">
+            <div class="section-header">
+                <p class="section-label">Journey</p>
+                <h2>Timeline hành trình</h2>
+                <p class="section-note">Những cột mốc quan trọng trên con đường trở thành designer.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-dot">🌟</span>
+                    <div class="timeline-card">
+                        <h3>Khởi đầu với bút chì</h3>
+                        <p>Những bức tranh nguệch ngoạc trên trang giấy đã mở ra thế giới nhẹ nhàng đầu tiên.</p>
+                        <span>2010 - 2015</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-dot">💡</span>
+                    <div class="timeline-card">
+                        <h3>Khám phá thiết kế số</h3>
+                        <p>Lần đầu làm quen với Photoshop, UI và cảm giác sáng tạo trên màn hình.</p>
+                        <span>2018</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-dot">🎓</span>
+                    <div class="timeline-card">
+                        <h3>Bước vào đại học</h3>
+                        <p>Học CNTT và Đồ họa kỹ thuật số, bắt đầu kết nối công nghệ với nghệ thuật.</p>
+                        <span>2021</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-dot">🚀</span>
+                    <div class="timeline-card">
+                        <h3>Dự án đầu tiên</h3>
+                        <p>Hoàn thành dự án tiền thân, học cách lắng nghe người dùng và chỉnh sửa tinh tế.</p>
+                        <span>2022</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-dot">🌀</span>
+                    <div class="timeline-card">
+                        <h3>Học Blender</h3>
+                        <p>Khám phá không gian 3D và cảm nhận cách ánh sáng thay đổi cảm xúc.</p>
+                        <span>2023</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-dot">✨</span>
+                    <div class="timeline-card">
+                        <h3>Portfolio hiện tại</h3>
+                        <p>Xây dựng một không gian kể chuyện bằng thiết kế, màu sắc và cảm xúc.</p>
+                        <span>2024 - Hiện tại</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact reveal">
+            <div class="section-header">
+                <p class="section-label">Contact</p>
+                <h2>Cảm ơn vì đã ghé thăm</h2>
+                <p class="section-note">Một lời nhắn nhỏ từ một cuốn nhật ký sáng tạo.</p>
+            </div>
+            <div class="contact-body">
+                <p>Mình cảm ơn bạn đã dành thời gian bước vào thế giới nhỏ này. Nếu bạn muốn hợp tác, trao đổi ý tưởng, hoặc chỉ đơn giản là muốn gửi một lời chào, mình luôn sẵn sàng lắng nghe.</p>
+                <div class="contact-grid">
+                    <a href="mailto:kimhong.dinh@gmail.com" class="contact-card glass"><i class="fas fa-envelope"></i><span>Email</span></a>
+                    <a href="tel:0344358951" class="contact-card glass"><i class="fas fa-phone"></i><span>0344358951</span></a>
+                    <a href="#" class="contact-card glass"><i class="fab fa-github"></i><span>GitHub</span></a>
+                    <a href="#" class="contact-card glass"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+                    <a href="#" class="contact-card glass"><i class="fas fa-briefcase"></i><span>Behance</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Designed with creativity and a little bit of midnight inspiration ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
